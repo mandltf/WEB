@@ -1,0 +1,137 @@
+.shadowbox {
+    width: 15em;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+  }
+
+  .fancy {
+    font-weight: bold;
+    text-shadow: 4px 4px 3px rgb(130, 152, 203);
+  }
+
+  .decoration-none {
+    text-decoration: none;
+  }
+
+  @font-face {
+    font-family: "Dicoding Font";
+    src: url('FILE-FONT.TTF');
+  }
+
+  h1, h2 {
+    font-family: "Dicoding Font";
+    color: rgb(8, 144, 8);
+    font-variant: small-caps;
+  }
+
+   /*selector dengan menggunakan id, kita gunakan tanda hash (#)*/
+   #Nov {
+    background-color: skyblue;
+  }
+
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+  }
+
+  /* Rule styling akan diterapkan pada karakter pertama di sebuah paragraf */
+p::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.three {
+  text-shadow: 4px 4px 7px #111111;
+  background-color: #cccccc;
+  color: #ffffff;
+}
+   
+  body {
+    font-size: small;
+     /* memilih sans-serif sesuai hasil diskusi klien pada 2 Januari 2021 */
+    font-family: sans-serif;
+  }
+
+  blockquote::before,
+blockquote::after {
+  content: '"';
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+  /*Adjacent Sibling Selector menggabungkan 2 basic selector dgn tanda + */
+  /*rule akan diterapkan pada elemen paragraf yang berada tepat setelah elemen gambar*/
+  img + p {
+    color: green;
+  }
+
+  /*rules akan diterapkan pada seluruh elemen kedua yang berada setelah elemen pertama selama masih memiliki induk yang sama, 
+  walaupun posisi dari elemen kedua tidak berada tepat setelahnya.
+  jadi walaupun ada elemen lain yg memisahkan elemen paragraf 1 dgn 2 maka ttp bisa diterapkan rule ini*/
+  img ~ p {
+    color: green;
+  }
+
+  /*Child Selector menggabungkan dua buah basic selector dengan menggunakan tanda greater than (>)
+  misal di dlm div ada elemen p maka rule diterapkan pada p jika p langsung setelah div*/
+  div > p {
+    background-color: yellow;
+  }
+
+  /*Descendant Selector mirip seperti child selector, tetapi hierarkinya lebih luas 
+  karena rule akan diterapkan pada seluruh elemen yang menjadi turunannya walaupun secara tidak langsung*/
+  div p {
+    background-color: yellow;
+  }
+
+  /* <a> element yang menerapkan href attribute */
+a[href] {
+  color: blue;
+}
+
+/* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+a[href^='#'] {
+  background-color: gold;
+}
+
+/* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+a[href*='example'] {
+  background-color: silver;
+}
+
+/* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+a[href*='insensitive' i] {
+  color: cyan;
+}
+
+/* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+a[href$='.org'] {
+  color: red;
+}
+
+/* Menargetkan seluruh tipe elemen */
+/*
+* {
+  color: green;
+}
+*/
+/* Menargetkan seluruh tipe elemen yang mengandung nilai "en" pada atribut lang */
+*[lang^='en'] {
+  font-style: italic;
+}
+
+/* Menargetkan seluruh tipe elemen yang memiliki nilai "warning" pada atribut class */
+*.warning {
+  color: red;
+}
+
+/* Menargetkan seluruh tipe elemen yang memiliki nilai "content" pada atribut id */
+*#content {
+  border: 1px solid blue;
+  padding: 20px;
+}

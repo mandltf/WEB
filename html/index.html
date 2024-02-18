@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sapardi Djoko</title>
+    
+</head>
+<img>
+    <!-- <u> utk underline -->
+    <!-- <b> dan <strong> utk bold -->
+    <!-- <br> utk break kalimat -->
+    <!-- <hr> utk garis horizontal -->
+    <!-- <i> dan <em> dan <cite> (sitasi/judul buku) dan <dfn> (definisi) utk italic -->
+    <!-- <blockquote> utk quote tanpa tanpa petik -->
+    <!-- <q> utk quote dengan tanda petik -->
+    <!-- <abbrtitle=...></abbr> utk kita tau singkatan kata trsbt-->
+    <!-- <acronym> utk kita tau akronim kata trsbt -->
+    <!-- <del> utk menyoret kata trsbt dan <ins> utk memberi kata yg benar -->
+    <!-- <ol> utk order list <li> utk list item ntar ada angkanya di dpn -->
+    <!-- <ul> utk unorder list alias gada angkanya cuma bulet2 -->
+    <!-- <dl> utk definition list alias  -->
+    <!-- <dt> utk kepalanya <dd> buat badannya -->
+    <!-- <a href= linknya apa> utk ngasih link biar pas mencet kata trsbt lgsg ke web yg dituju -->
+        <!-- <tr> utk baris -->
+        <!-- <td> utk data, <td/th colspan="2"> utk menyatukan 2 kotak sebaris -->
+        <!-- <th> utk header, bold <td/th rowspan="2" utk menyatukan 2 kotak sekolom-->
+<!-- <input type="checkbox" utk pilgan tapi bisa lebih dr 1 jawaban -->
+<!--  <input type="radio" utk pilgan tapi cuma 1 jawaban -->
+            <!-- <img src="linknya"> utk gambar -->
+
+
+        <img src="img/sky.jpg" widhth="100%">
+        <h1>MENU</h1>
+        <table border="6">
+            <th>no</th>
+            <th>menu</th>
+            <th>keterangan</th>
+    
+        <tr>
+            <th>1</th>
+            <td><a href="coba1.html#Juli">Hujan Bulan Juli</a></td>
+            <td>Sapardi Djoko</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td><a href="coba1.html#Nov">Hujan Bulan November</a></td>
+            <td>Amanda Latifa</td>
+        </tr>
+        <tr>
+            <th rowspan="4">3</th>
+            <td rowspan="4"><a href="coba1.html#playlist">Playlist</a></td>
+            <td>Rossa</td>
+        </tr>
+        <tr><td>Rio Febrian</td></tr>
+        <tr><td>D'Masiv</td></tr>
+        <tr><td>Padi</td></tr>
+        
+        </table>
+
+        <hr>
+
+        <i>
+            <b> 
+                <h2 id="Juli">Hujan Bulan Juli</h2>
+            </b>
+         </i>
+        <u>
+                 <h4>oleh Sapardi Djoko</h4>
+        </u>
+
+        <img src="img/hujan bulan juli.jpg" height="100px alt="logo" title="sampul buku"></img>
+
+    <p align="justify">tak ada yang lebih tabah</p>
+    <p align="justify">dari hujan bulan juni</p>
+    <p align="justify">dirahasiakannya rintik rindunya</p>
+    <p align="justify">kepada pohon berbunga itu</p>
+
+   <hr>
+
+        <i>
+            <b> 
+                <h2 id="Nov">Hujan Bulan November</h2>
+            </b>
+        </i>
+        <u>
+                 <h4>oleh Amanda Latifa</h4>
+        </u>
+    <p>Tak seperti puisi <abbr title="penyair terkenal">Sapardi Djoko</abbr> - <cite>Hujan Bulan Juni</cite> yang mengungkap rasa dengan <b>pedihnya</b></p>
+    <p><dfn>Aku</dfn> adalah manusia yang selalu berterus terang</p>
+    <p>Tidak ada rumus rumit seperti relativitas E=MC<sup>2</sup></p>
+    <p>atau tanda abstrak seperti <acronym title="Asam Sulfat">H<sub>2</sub>SO<sub>4</sub></acronym></p>
+    <p>aku hanya ingin memberi tahu kepadamu sebuah kutipan indah</p> 
+    <p><q>Kalau aku sudah memilikimu, aku tidak membutuhkan apa-apa lagi</q></p>
+    
+
+        <dt>
+            <ul>
+                <li id="playlist">Playlist</li>
+            </ul>
+        </dt>
+    <ol>
+        <dd>
+            <a href=https://www.youtube.com/watch?v=EuoVC-2peU4><li>Tak Sanggup Lagi-Rossa</li></a>
+            <a href=https://www.youtube.com/watch?v=ibJlyFSrgCk><li>Aku Bertahan-Rio Febrian</li></a>
+            <a href=https://www.youtube.com/watch?v=kZIVWKPiLUc><li>Merindukanmu-D'Masiv</li></a>
+            <a href=https://www.youtube.com/watch?v=JWgqWa-bEv4><li>Menanti Sebuah Jawaban-Padi</li></a>
+        </dd> 
+    </ol>
+
+    <form>
+        Nama Depan : <input type="text"><br>
+        Nama Belakang : <input type="text"><br>
+        Password : <input type="password"><br>
+        <h3>Apa Jawabanmu</h3>
+        <input type="radio" name="jawab" value="ya">ya<label for="ya"></label><br>
+        <input type="radio" name="jawab" value="tidak">tidak<label for="tidak"></label><br>
+
+        <h3>Pilih Alasanmu</h3>
+        <select name="alasan">
+            <option value="cakep">cakep</option>
+            <option values="baik">baik</option>
+            <option value="pinter">pinter</option>
+            <option value="no reason">no reason</option>
+        </select>
+
+        <h3>Upload File</h3>
+        <input type="file" nama="foto" value="upload_foto"><br>
+        <label for="pesan">Pesan Terakhir :</label><br>
+        <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea><br>
+        <input type="button" name="submit" value="submit">
+    </form>
+</body>
+</html>
